@@ -42,7 +42,7 @@ module Decidim
 
           @response = perform_request
 
-          errors.add(:base, I18n.t("cannot_validate", scope: "errors.messages.sant_boi_census_authorization_handler")) unless @response[:status] == 200
+          errors.add(:base, I18n.t("connection_failed", scope: "errors.messages.sant_boi_census_authorization_handler")) unless @response[:status] == 200
         end
 
         # Validates the document against the Sant Boi WS.
@@ -82,8 +82,6 @@ module Decidim
         #   status => WS response status, as Integer
         def perform_request
           SantBoiCensusAuthorizationService.new(sanitized_document_type, document_number).perform_request
-        rescue StandardError
-          errors.add(:base, I18n.t("connection_failed", scope: "errors.messages.sant_boi_census_authorization_handler"))
         end
 
         # Returns true or false depending on whether XML element 'HABITANTE' is found.

@@ -17,8 +17,6 @@ ca:
   errors:
     messages:
       sant_boi_census_authorization_handler:
-        cannot_validate: El cens de Sant Boi no pot validar les seves dades. No es
-          compleixen les condicions addicionals per verificar-se
         connection_failed: No es possible connectar amb el cens de Sant Boi. Si us
           plau, intenti-ho més tard.
         document_number_not_valid: El document d'identitat no és vàlid

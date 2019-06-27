@@ -17,8 +17,6 @@ en:
   errors:
     messages:
       sant_boi_census_authorization_handler:
-        cannot_validate: The census of Sant Boi cannot validate your data. The additional
-          conditions to be verified are not met.
         connection_failed: It is not possible to connect with the Sant Boi census.
           Please try again later.
         document_number_not_valid: The document number is not valid
