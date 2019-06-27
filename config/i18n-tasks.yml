@@ -1,0 +1,13 @@
+# i18n-tasks finds and manages missing and unused translations: https://github.com/glebm/i18n-tasks
+
+# The "main" locale.
+base_locale: en
+locales: [ca, en, es]
+ignore_missing:
+  - "decidim.verifications.authorizations.*"
+
+ignore_unused:
+  - "decidim.components.decidim-verifications-sant_boi_census.name"
+  - "activemodel.attributes.authorization_handler.*"
+  - "decidim.authorization_handlers.sant_boi_census_authorization_handler.*"
+  - "errors.messages.sant_boi_census_authorization_handler.duplicate_authorization"

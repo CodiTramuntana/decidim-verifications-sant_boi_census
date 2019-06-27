@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Body><doOperationTAOResponse xmlns="http://generic.services.conecta.es"><doOperationTAOReturn>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;taoServiceResponse&gt;
+    &lt;data xsi:type=&quot;xs:string&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&amp;gt;
+&amp;lt;PoblacionServices xmlns:ns2=&quot;http://dto.volante.poblacion.conecta.es&quot; xmlns=&quot;http://dto.poblacion.conecta.es&quot;&amp;gt;
+    &amp;lt;getHabitanteByDNI&amp;gt;
+        &amp;lt;getHabitanteByDNIResponse&amp;gt;
+            &amp;lt;ERROR&amp;gt;
+                &amp;lt;CODE&amp;gt;0037&amp;lt;/CODE&amp;gt;
+                &amp;lt;DESCRIPTION&amp;gt;No existe ningun habitante con los datos introducidos&amp;lt;/DESCRIPTION&amp;gt;
+                &amp;lt;TYPE&amp;gt;W&amp;lt;/TYPE&amp;gt;
+            &amp;lt;/ERROR&amp;gt;
+        &amp;lt;/getHabitanteByDNIResponse&amp;gt;
+    &amp;lt;/getHabitanteByDNI&amp;gt;
+&amp;lt;/PoblacionServices&amp;gt;
+&lt;/data&gt;
+    &lt;type&gt;JAXB&lt;/type&gt;
+    &lt;resultCode&gt;OK&lt;/resultCode&gt;
+    &lt;resultMessage&gt;&lt;/resultMessage&gt;
+    &lt;idConecta&gt;740300926978259707203&lt;/idConecta&gt;
+&lt;/taoServiceResponse&gt;
+</doOperationTAOReturn></doOperationTAOResponse></soapenv:Body></soapenv:Envelope>

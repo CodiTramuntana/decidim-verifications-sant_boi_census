@@ -1,0 +1,31 @@
+---
+ca:
+  activemodel:
+    attributes:
+      authorization_handler:
+        document_number: Document d'identitat
+        document_type: Tipus de document
+  decidim:
+    authorization_handlers:
+      sant_boi_census_authorization_handler:
+        explanation: Verifica't com ciutadà de Sant Boi
+        name: Ciutadà de Sant Boi
+    verifications:
+      authorizations:
+        new:
+          authorize_with: Verifica't com %{authorizer}
+  errors:
+    messages:
+      sant_boi_census_authorization_handler:
+        cannot_validate: El cens de Sant Boi no pot validar les seves dades. No es
+          compleixen les condicions addicionals per verificar-se
+        connection_failed: No es possible connectar amb el cens de Sant Boi. Si us
+          plau, intenti-ho més tard.
+        document_number_not_valid: El document d'identitat no és vàlid
+        duplicate_authorization: Ja hi ha un usuari verificat amb aquestes dades.
+          No se'n pot verificar un altre.
+        too_young: Heu de tenir almenys 16 anys
+        unexpected_error: Alguna cosa ha anat malament. Si us plau, intenti-ho més
+          tard.
+      uppercase_only_letters_numbers: ha d'estar en majúscules i contenir lletres
+        i/o nombres

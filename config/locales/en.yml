@@ -1,0 +1,30 @@
+---
+en:
+  activemodel:
+    attributes:
+      authorization_handler:
+        document_number: Document number
+        document_type: Document type
+  decidim:
+    authorization_handlers:
+      sant_boi_census_authorization_handler:
+        explanation: Check yourself as a citizen of Sant Boi
+        name: Citizen of Sant Boi
+    verifications:
+      authorizations:
+        new:
+          authorize_with: Check yourself as %{authorizer}
+  errors:
+    messages:
+      sant_boi_census_authorization_handler:
+        cannot_validate: The census of Sant Boi cannot validate your data. The additional
+          conditions to be verified are not met.
+        connection_failed: It is not possible to connect with the Sant Boi census.
+          Please try again later.
+        document_number_not_valid: The document number is not valid
+        duplicate_authorization: There is already a user verified with this data.
+          Cannot verify another user.
+        too_young: You must be at least 16 years old
+        unexpected_error: Something went wrong. Please try again later.
+      uppercase_only_letters_numbers: must be all uppercase and contain only letters
+        and/or numbers

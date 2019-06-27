@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:gen="http://generic.services.conecta.es">
+   <soapenv:Header />
+   <soapenv:Body>
+      <gen:doOperationTAO>
+         <gen:xmlIn><![CDATA[<taoServiceRequest>
+                                <application>EPOB</application>
+                                <businessName>ConectaVolanteePobBC</businessName>
+                                <operationName>getHabitanteByDNI</operationName>
+                                <data>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+                                &lt;PoblacionServices xmlns=&quot;http://dto.poblacion.conecta.es&quot;&gt;
+                                &lt;getHabitanteByDNI&gt;
+                                &lt;getHabitanteByDNIRequest&gt;
+                                &lt;OIDPARINS&gt;sant_boi_census_dboid&lt;/OIDPARINS&gt;
+                                &lt;TIPODOC&gt;01&lt;/TIPODOC&gt;
+                                &lt;IDNUMBER&gt;12345678A&lt;/IDNUMBER&gt;
+                                &lt;NIVEL&gt;1&lt;/NIVEL&gt;
+                                &lt;/getHabitanteByDNIRequest&gt;
+                                &lt;/getHabitanteByDNI&gt;
+                                &lt;/PoblacionServices&gt;</data>
+                                </taoServiceRequest>]]></gen:xmlIn>
+         <gen:token>
+         token
+      </gen:token>
+      </gen:doOperationTAO>
+   </soapenv:Body>
+</soapenv:Envelope>

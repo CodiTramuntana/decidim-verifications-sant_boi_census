@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:gen="http://generic.services.conecta.es">
+   <soapenv:Header />
+   <soapenv:Body>
+      <gen:login>
+         <gen:user>sant_boi_census_user</gen:user>
+         <gen:password>sant_boi_census_password</gen:password>
+      </gen:login>
+   </soapenv:Body>
+</soapenv:Envelope>

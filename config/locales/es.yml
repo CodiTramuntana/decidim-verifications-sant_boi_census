@@ -1,0 +1,30 @@
+---
+es:
+  activemodel:
+    attributes:
+      authorization_handler:
+        document_number: Documento de identidad
+        document_type: Tipo de documento
+  decidim:
+    authorization_handlers:
+      sant_boi_census_authorization_handler:
+        explanation: Verificate como ciudadano de Sant Boi
+        name: Ciudadano de Sant Boi
+    verifications:
+      authorizations:
+        new:
+          authorize_with: Verificate como %{authorizer}
+  errors:
+    messages:
+      sant_boi_census_authorization_handler:
+        cannot_validate: El censo de Sant Boi no puede validar sus datos. No se cumplen
+          las condiciones adicionales para verificarse
+        connection_failed: No es posible conectar con el censo de Sant Boi. Por favor,
+          inténtelo más tarde.
+        document_number_not_valid: El documento de identidad no es válido
+        duplicate_authorization: Ya hay un usuario verificado con estos datos. No
+          se puede verificar otro.
+        too_young: Debes tener al menos 16 años de edad.
+        unexpected_error: Algo ha ido mal. Por favor, inténtelo más tarde.
+      uppercase_only_letters_numbers: debe ser todo en mayúsculas y contener solo
+        letras y/o números
