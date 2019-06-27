@@ -20,17 +20,19 @@ module Decidim
         #   body   => WS response body, as Nokogiri::XML instance
         #   status => WS response status, as Integer
         def perform_request
-          return @response if defined?(@response)
-
           @token = retrieve_login_response(perform_login_request.body)
+
           response = perform_do_operation_tao_request
 
-          @response = { status: response.status,
-                        body: retrieve_get_habitante_by_dni_response(response.body) }
+          {
+            status: response.status,
+            body: retrieve_get_habitante_by_dni_response(response.body)
+          }
         rescue StandardError => e
           Rails.logger.error "[#{self.class.name}] Failed to perform request"
           Rails.logger.error e.message
           Rails.logger.error e.backtrace.join("\n")
+          {} # To avoid crashing in SantBoiCensusAuthorizationHandler::ws_request_must_succeed
         end
 
         private

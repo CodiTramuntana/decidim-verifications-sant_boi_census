@@ -17,8 +17,6 @@ es:
   errors:
     messages:
       sant_boi_census_authorization_handler:
-        cannot_validate: El censo de Sant Boi no puede validar sus datos. No se cumplen
-          las condiciones adicionales para verificarse
         connection_failed: No es posible conectar con el censo de Sant Boi. Por favor,
           inténtelo más tarde.
         document_number_not_valid: El documento de identidad no es válido
