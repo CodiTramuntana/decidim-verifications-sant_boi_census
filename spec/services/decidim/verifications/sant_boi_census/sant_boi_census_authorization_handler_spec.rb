@@ -50,10 +50,10 @@ module Decidim
           describe "unique_id" do
             it "generates a SHA hash with 512 Bits from a given document number" do
               handler.document_number = "ABC123"
-              expect(handler.unique_id).to eq("fa4e5aadfb9b9ac188bae18de2dbc3c9ef3c4729b77ab887788fe3cb6b42d19620ca601758e36de0b304b2f07b07a3b7d07b17887043d785ab24494cbf52d8e6")
+              expect(handler.unique_id).to eq("b118edbc0b58672d2ce60c9faa9261243d27ecae1e8eac1b84241824523db82f692ea3eb45ad855caeae685fff09eeb27a89f1045df1ea76e809b3fc79472cea")
 
               handler.document_number = "XYZ456"
-              expect(handler.unique_id).to eq("9676e0ce31ec417e9d22ee0f61d814d42b9f67ced2cdf0bf0f90ea0ad3b1ce737d75c87034463f148db08b9d8ac8e6d5a0532fac94ccd0d823c914a7ca020c53")
+              expect(handler.unique_id).to eq("27d99851d30c52729807445e634aa41cf901d6d3fa76cbb6cc0bf5df6934d5b833b1f9029edcf7aac6e122036d767af6007e7305e3376d8b0352c7e803355399")
             end
           end
         end
