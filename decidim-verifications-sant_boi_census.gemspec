@@ -17,8 +17,9 @@ Gem::Specification.new do |s|
   s.description = "Decidim Verification for Sant boi Census."
 
   s.files = Dir["{app,config,lib}/**/*", "LICENSE-AGPLv3.txt", "Rakefile", "README.md"]
+  s.test_files = Dir["spec/**/*"]
 
-  DECIDIM_VERSION = ">= 0.17.0"
+  DECIDIM_VERSION = "~> 0.25.2"
 
   s.add_dependency "decidim-core", DECIDIM_VERSION
   s.add_dependency "decidim-verifications", DECIDIM_VERSION

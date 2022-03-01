@@ -42,11 +42,11 @@ sant_boi_census:
 ```
 ## Testing
 
+Node 16.1.9 is required!
+
 1. Run `bundle exec rake test_app`.
 
-2. Run tests with `bundle exec rspec`
-
-5. Set the configuration values for the test app in `spec/decidim_dummy_app/config/secrets.yml`
+2. Set the configuration values for the test app in `spec/decidim_dummy_app/config/secrets.yml`
 
 ```yaml
 # The test stubs are configured to use the following values as to not reveal the real ones.
@@ -57,9 +57,11 @@ sant_boi_census:
   sant_boi_census_dboid: sant_boi_census_dboid
 ```
 
+3. Run tests with `bundle exec rspec`
+
 ## Versioning
 
-`Decidim::Verifications::SantBoiCensus` depends directly on `Decidim::Verifications` in `0.17.0` version.
+`Decidim::Verifications::SantBoiCensus` depends directly on `Decidim::Verifications` in `0.25.2` version.
 
 ## Contributing
 
