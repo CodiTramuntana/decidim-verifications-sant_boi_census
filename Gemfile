@@ -6,9 +6,12 @@ ruby RUBY_VERSION
 
 gemspec
 
-DECIDIM_VERSION = "~> 0.26.5"
+DECIDIM_VERSION = "~> 0.27.2"
 
 gem "decidim", DECIDIM_VERSION
+
+# temporal solution while gems embrace new psych 4 (the default in Ruby 3.1) behavior.
+gem "psych", "< 4"
 
 group :development, :test do
   gem "bootsnap", require: true

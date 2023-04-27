@@ -61,7 +61,7 @@ sant_boi_census:
 
 ## Versioning
 
-`Decidim::Verifications::SantBoiCensus` depends directly on `Decidim::Verifications` in `0.26.5` version.
+`Decidim::Verifications::SantBoiCensus` depends directly on `Decidim::Verifications` in `0.27.2` version.
 
 ## Contributing
 

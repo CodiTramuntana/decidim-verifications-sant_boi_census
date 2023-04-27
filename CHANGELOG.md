@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.1.4 MINOR
+- Upgrade to Decidim 0.27.2
+- Bump Ruby version to 3.1.3
+
 ## 0.1.3 MINOR
 - Upgrade to Decidim 0.26.5
 
