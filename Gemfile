@@ -6,7 +6,7 @@ ruby RUBY_VERSION
 
 gemspec
 
-DECIDIM_VERSION = "~> 0.25.2"
+DECIDIM_VERSION = "~> 0.26.5"
 
 gem "decidim", DECIDIM_VERSION
 
